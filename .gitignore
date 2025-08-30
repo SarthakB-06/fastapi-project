@@ -38,7 +38,7 @@ htmlcov/
 # Virtual environment
 .venv/
 venv/
-env/
+.env
 /bin/
 /include/
 /lib/
