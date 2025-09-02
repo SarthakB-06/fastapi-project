@@ -4,7 +4,7 @@ from app.core.config import settings
 from app.cache.redis_cache import get_cached_data , set_cached_data
 
 
-model = joblib.load(settings.MODEL_FILE_PATH)
+model = joblib.load(settings.MODEL_PATH)
 
 
 def make_prediction(data:dict):

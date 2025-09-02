@@ -9,7 +9,7 @@ services:
     environment:
       - API_KEY=demo-key
       - JWT_SECRET_KEY=dshkfhhasdzjnakjkfhahkjsdgf
-      - REDIS_URL=redis://localhost:6379
+      - REDIS_URL=redis://redis:6379
     depends_on:
       - redis
       - prometheus

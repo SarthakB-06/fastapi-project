@@ -24,4 +24,4 @@ class CarFeatures(BaseModel):
 @router.post('/predict')
 def predict_price(car : CarFeatures , user : str = Depends(get_current_user) , api_key : str = Depends(get_api_key)):
     prediction = make_prediction(car.model_dump())
-    return {'predicted_price' : f'{prediction:,.2f}'}
+    return {'predicted_price' : prediction}

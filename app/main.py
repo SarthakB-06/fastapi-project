@@ -5,7 +5,7 @@ from app.middlewares.logging_middleware import LoggingMiddleware
 from app.core.exceptions import register_exception_handlers
 
 
-app = FastAPI(title="Car Price Prediction API" , version="1.0.0")
+app = FastAPI(title="Car Price Prediction API")
 app.add_middleware(LoggingMiddleware)
 
 
